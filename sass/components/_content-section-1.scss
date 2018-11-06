@@ -1,0 +1,57 @@
+.content-section-1 {
+    position: relative;
+    margin-top: -70px;
+    padding-bottom: 40px;
+
+    @include media-breakpoint-down(md) { 
+        margin-top: -150px;
+    }
+
+    @include media-breakpoint-down(sm) { 
+        margin-top: -250px;
+    }
+
+    @include media-breakpoint-up(xl) { 
+        margin-top: -180px;
+    }
+
+    &__inner-1 {
+        position: absolute;
+        background-image: url(../images/content-section-1/middle1-shape-left.svg);
+        background-size: cover;
+        top: 150px;
+        left: 0;
+        width: 663px;
+        height: 618px;
+        z-index: -1;
+
+        @include media-breakpoint-only(md) { 
+            top: 500px;
+        }
+    }
+
+    &__inner-2 {
+        position: absolute;
+        background-image: url(../images/content-section-1/middle1-shape-right.svg);
+        background-size: cover;
+        top: 200px;
+        right: 0;
+        width: 322px;
+        height: 528px;
+        z-index: -1;
+
+        @include media-breakpoint-only(md) { 
+            top: 1040px;
+        }
+    }
+
+    &__bottom {
+        position: absolute;
+        background-image: url(../images/content-section-1/vlak2.svg);
+        background-size: cover;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+}

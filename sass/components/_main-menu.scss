@@ -1,0 +1,57 @@
+.main-menu {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 5px;
+
+    ul {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        margin: 5px 0 0 0;
+
+        li {
+            float: left;
+
+            a {
+                display: inline-block;
+                margin-right: 45px;
+                font-size: $font-size-main-menu;
+                line-height: $line-height-main-menu;
+                color: $color-white;
+                text-transform: uppercase;
+                text-decoration: none;
+                @include transition;
+
+                &:hover {
+                    color: $color-cyan;
+                }
+            }
+        }
+    }
+
+
+    @include media-breakpoint-down(md) {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        background-color: #003344;
+        width: 100%;
+        padding: 25px 0;
+        text-align: center;
+
+        ul {
+            li {
+                float: none;
+                display: block;
+                
+                a {
+                    font-size: 20px;
+                    line-height: 34px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

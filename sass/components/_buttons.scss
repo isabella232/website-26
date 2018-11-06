@@ -1,0 +1,46 @@
+.buttons {
+    overflow: hidden;
+    
+    .button {
+        margin: 0 20px 20px 0;
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: $color-cyan;
+    color: $color-dark-blue;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font-montserrat;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    border-radius: 25px;
+    @include transition;
+    
+    &:hover {
+        cursor: pointer;
+        background-color: $color-darker-cyan;
+    }
+    
+    &:active,
+    &:focus {
+        background-color: #2BBCA3;
+    }
+    
+    &--white {
+        background-color: $color-white;
+    }
+    
+    @include media-breakpoint-down(lg) {
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+    
+    &--small {
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,76 @@
+.media-container {
+    position: relative;
+    display: inline-block;
+    background-color: $color-cyan; 
+    width: 100%;
+    padding-bottom: 67%;
+    overflow: hidden;
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    &:not(.has-icon) {
+        .media-container__image {
+            @include transition;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.08);
+            } 
+        }
+    }
+
+    &--video {
+        width: 100%;
+        padding-bottom: 56.3%;
+        border-radius: 10px;
+    }
+
+    &.has-icon {
+        [class^="icon-"] {
+            background-color: $color-white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 0px 15px 90px 1px rgba(0, 0, 0, .5);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include transition;
+
+            &:before {
+                font-size: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:hover {
+                background-color: $color-dark-blue;
+                cursor: pointer;
+
+                &:before {
+                    color: $color-white;
+                }
+            }
+
+            &:active,
+            &:focus {
+                background-color: #003344;
+                cursor: pointer;
+
+                &:before {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.ambiance-image {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    z-index: -1;
+    overflow: hidden;
+    
+    @include media-breakpoint-up(xl) {
+        height: 650px;
+    }
+
+    &__bottom {
+        position: absolute;
+        background-image: url(../images/ambiance-image/vlak1.svg);
+        background-size: cover;
+        bottom: -2px;
+        left: -3px;
+        width: 101%;
+        padding-bottom: 10.5%;
+    }
+}

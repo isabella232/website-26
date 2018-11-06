@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1439px" height="122px" viewBox="0 0 1439 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1,4240.13655 C1,4240.13655 671.410156,4293.57422 1441,4155 L1441,4276.58594 L1,4276.58594 L1,4240.13655 Z" id="path-1"></path>
+    </defs>
+    <g id="001_home_v1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="001a_VD_home_desktophd_v1-Copy-2" transform="translate(-1.000000, -4155.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Fill-1" fill="#F2F5F8" transform="translate(721.000000, 4215.792969) scale(-1, 1) rotate(-180.000000) translate(-721.000000, -4215.792969) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

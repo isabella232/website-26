@@ -1,0 +1,13 @@
+.content-section-3 {
+    @include media-breakpoint-down(md) { 
+        .buttons {
+            margin-bottom: 60px;
+        }
+        
+        .content-card {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

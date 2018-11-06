@@ -1,0 +1,37 @@
+.quote-section {
+    position: relative;
+    background-color: $color-white;
+    width: 100%;
+    padding: 80px 0 40px 0;
+    text-align: center;
+
+    &__content {
+        display: inline-block;
+        max-width: 760px;
+        width: 100%;
+        text-align: center;
+
+        @include media-breakpoint-down(md) { 
+            width: 90%;
+        }
+
+        quote {
+            display: inline-block;
+            font-family: $font-comfortaa;
+            font-size: 26px;
+            color: $color-dark-blue;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__bottom {
+        position: absolute;
+        background-image: url(../images/quote-section/vlak3.svg);
+        background-size: 100% 100%;
+        bottom: 4px;
+        left: 0;
+        width: 100%;
+        padding-bottom: 6.9%;
+        transform: translateY(100%);
+    }
+}
